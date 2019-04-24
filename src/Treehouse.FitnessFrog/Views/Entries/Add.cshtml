@@ -44,8 +44,8 @@
         <div class="col-md-6">
 
             <div class="form-group">
-                <label for="Notes" class="control-label">Notes</label>
-                <textarea id="Notes" name="Notes" class="form-control" rows="14" cols="20">@ViewBag.Notes</textarea>
+                @Html.Label("Notes", new { @class = "control-label" })
+                @Html.TextArea("Notes", null, 14, 20, new { @class = "form-control" })
             </div>
 
         </div>
